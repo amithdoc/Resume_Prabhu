@@ -11,11 +11,35 @@
         margin-bottom: 10%;
         background-color: rgb(0, 0, 0);
         border-radius: 20px;
-        box-shadow: rgb(81, 183, 242) 10px 20px 100px 11px;
+		box-shadow: inset;
         border: 9px solid  rgb(0, 0, 0) ;
+		animation: prabhu_amith;
+		animation-duration: 5s;
+		animation-iteration-count: infinite;
         }
-        .section.Summary
-        
+		@keyframes prabhu_amith
+		{
+			0%
+			{
+				box-shadow:  rgb(81, 183, 242) 10px 20px 100px 11px;
+			}
+			25%
+			{
+				box-shadow:  rgba(12, 255, 21, 0.588) 10px 20px 100px 11px;
+			}
+			50%
+			{
+				box-shadow:  rgb(81, 183, 242) 10px 20px 100px 11px;
+			}
+			75%
+			{
+				box-shadow:  rgba(12, 255, 21, 0.588) 10px 20px 100px 11px;
+			}
+			100%
+			{
+				box-shadow:  rgb(30, 238, 252) 10px 20px 100px 11px;
+			}
+		}
 		body {
 			font-family: Arial, sans-serif;
 			margin: 0;
@@ -42,6 +66,7 @@
 		.container {
 			display: flex;
 			flex-direction: column;
+			background-color: rgb(0, 0, 0);
 			align-items: center;
 			padding: 20px;
 		}
@@ -65,9 +90,9 @@
 		}
 		.section ul {
             color: white;
-			margin: auto;
+			margin: 0;
 			padding: 0;
-			list-style-type:none;
+			list-style:disc;
 		}
 		.section ul li {
             color: white;
@@ -91,16 +116,24 @@
         box-shadow: rgb(81, 183, 242) 10px 20px 100px 11px;
         border: 9px solid  rgb(0, 0, 0) ;
         }
-        
+        img
+		{
+			border-radius: 50%;
+			width: 150px;
+			height: 150px;
+		
+		}
 	</style>
 </head>
 <body class="amith">
 	<header>
         <p style="font-size:150%; margin-right:90%;">RESUME</p>
+		<img src="1606484081195.jpg">
 		<h1>PRABHU SHANKAR M.C</h1>
 		<p>HASSAN, KARNATAKA</p>
 		<p>amithprabhu31@gmail.com | 7019580562</p>
 		<a style="color: #f7f7f7;" href="https://www.linkedin.com/in/prabhu-shankar-6a8163184/">LinkedIn Profile</a>
+		
 	</header>
 	<div class="container">
 		<div class="section onhover">
@@ -133,3 +166,5 @@
                 <li>Java Full Stack Certificate | Kodnest Training Centre </li>
             </ul>
         </div>
+</body>
+</html>
