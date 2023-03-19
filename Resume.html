@@ -9,64 +9,91 @@
         margin-left: 10%;
         margin-right: 10% ;
         margin-bottom: 10%;
+        background-color: rgb(250, 247, 247);
+        border-radius: 20px;
+		box-shadow: inset;
+        border: 9px solid  rgb(255, 255, 255) ;
+		box-shadow:rgb(64, 176, 251) 10px 20px 100px 11px;
+		}
+    .dark-mode
+        {
+        margin-top: 10%;
+        margin-left: 10%;
+        margin-right: 10% ;
+        margin-bottom: 10%;
         background-color: rgb(0, 0, 0);
         border-radius: 20px;
 		box-shadow: inset;
         border: 9px solid  rgb(0, 0, 0) ;
-		animation: prabhu_amith;
-		animation-duration: 5s;
-		animation-iteration-count: infinite;
-        }
-		@keyframes prabhu_amith
-		{
-			0%
-			{
-				box-shadow:  rgb(81, 183, 242) 10px 20px 100px 11px;
-			}
-			25%
-			{
-				box-shadow:  rgba(12, 255, 21, 0.588) 10px 20px 100px 11px;
-			}
-			50%
-			{
-				box-shadow:  rgb(81, 183, 242) 10px 20px 100px 11px;
-			}
-			75%
-			{
-				box-shadow:  rgba(12, 255, 21, 0.588) 10px 20px 100px 11px;
-			}
-			100%
-			{
-				box-shadow:  rgb(30, 238, 252) 10px 20px 100px 11px;
-			}
+		box-shadow:rgba(83, 64, 251, 0.799) 10px 20px 100px 11px;
 		}
+
+    .dark-mode header
+    {
+      background-color: #000000;
+    }
+
+    .dark-mode h1{
+      color: white;
+    }
+
+    .dark-mode h2{
+      color: white;
+    }
+  
+    .dark-mode .container{
+      background-color: rgb(0, 0, 0);
+    }
+    .dark-mode .section{
+      background-color: rgb(0, 0, 0);
+    }
+    .dark-mode .section h2{
+      color: white;
+    }
+    .dark-mode .section p{
+      color: white;
+    }
+    .dark-mode .section li{
+      color: white;
+    }
+
+    .dark-mode  p{
+      color: white;
+    }
+    .dark-mode .section.onhover:hover
+        {
+        background-color: rgb(0, 0, 0);
+        border-radius: 20px;
+        box-shadow: rgb(64, 176, 251) 10px 20px 100px 11px;
+        border: 9px solid  rgb(0, 0, 0);
+        }
 		body {
 			font-family: Arial, sans-serif;
 			margin: 0;
 			padding: 0;
 		}
 		header {
-			background-color: #000000;
-			color: #fff;
+			background-color: #f8f5f5;
+			color: #000000;
 			padding: 20px;
 			text-align: center;
 		}
 		h1, h2 {
-            color: white;
+            color: rgb(0, 0, 0);
 			margin: 0;
 		}
 		h1 {
-            color: white;
+            color: rgb(0, 0, 0);
 			font-size: 36px;
 		}
 		h2 {
-            color: white;
+            color: rgb(0, 0, 0);
 			font-size: 24px;
 		}
 		.container {
 			display: flex;
 			flex-direction: column;
-			background-color: rgb(0, 0, 0);
+			background-color: rgb(255, 255, 255);
 			align-items: center;
 			padding: 20px;
 		}
@@ -74,34 +101,34 @@
 			margin-bottom: 20px;
 			width: 100%;
 			max-width: 800px;
-			background-color: #030303;
+			background-color: #f9f6f6;
 			border-radius: 5px;
 			padding: 20px;
 			box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 		}
 		.section h2 {
-			color: #ffffff;
+			color: #000000;
 			margin-bottom: 10px;
 		}
 		.section p {
-            color: white;
+            color: rgb(0, 0, 0);
 			margin: 0;
 			font-size: 16px;
 		}
 		.section ul {
-            color: white;
+            color: rgb(0, 0, 0);
 			margin: 0;
 			padding: 0;
 			list-style:disc;
 		}
 		.section ul li {
-            color: white;
+            color: rgb(0, 0, 0);
 			margin-bottom: 5px;
             margin-right: auto;
 			font-size: 16px;
 		}
 		.section ul li a {
-            color: white;
+            color: rgb(0, 0, 0);
 			color: #333;
 			text-decoration: none;
 		}
@@ -111,35 +138,101 @@
 		}
         .section.onhover:hover
         {
-        background-color: rgb(0, 0, 0);
+        background-color: rgb(237, 237, 237);
         border-radius: 20px;
-        box-shadow: rgb(81, 183, 242) 10px 20px 100px 11px;
-        border: 9px solid  rgb(0, 0, 0) ;
+        box-shadow: rgb(58, 58, 58) 10px 20px 100px 11px;
+        border: 9px solid  rgb(237, 237, 237);
         }
-        img
+    img
 		{
 			border-radius: 50%;
 			width: 150px;
 			height: 150px;
 		
 		}
+
+
+
+.toggle-switch {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  --light: #d8dbe0;
+  --dark: #28292c;
+  --link: rgb(27, 129, 112);
+  --link-hover: rgb(24, 94, 82);
+}
+
+.switch-label {
+  position: absolute;
+  width: 100%;
+  height: 45px;
+  background-color: var(--dark);
+  border-radius: 25px;
+  cursor: pointer;
+  border: 2px solid var(--dark);
+}
+
+.checkbox {
+  position: fixed;
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.checkbox:checked ~ .slider {
+  background-color: var(--light);
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  -webkit-box-shadow: inset 12px -4px 0px 0px var(--light);
+  box-shadow: inset 12px -4px 0px 0px var(--light);
+  background-color: var(--dark);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.checkbox:checked ~ .slider::before {
+  -webkit-transform: translateX(50px);
+  -ms-transform: translateX(50px);
+  transform: translateX(50px);
+  background-color: var(--dark);
+  -webkit-box-shadow: none;
+  box-shadow:#0a91f8;
+}
+
 	</style>
 </head>
 <body class="amith">
-	<header>
-		<a href="https://amithdoc.github.io/Resume_Prabhu/Resume2023.pdf" download="Prabhu Shankar Resume.pdf">Download</a>
-                <p style="font-size:150%; margin-right:90%;">PORTFOLIO</p>
+	<header >
+		<a href="https://amithdoc.github.io/Resume_Prabhu/Resume2023.pdf" download="Resume2023.pdf" style="color: #f22323;">Download Resume</a>
+        <p style="font-size:150%; margin-right:90%;">PORTFOLIO</p>
+		
 		<img src="1606484081195.jpg">
 		<h1>PRABHU SHANKAR M.C</h1>
 		<p>HASSAN, KARNATAKA</p>
 		<p>amithprabhu31@gmail.com | 7019580562</p>
-		<a style="color: #f7f7f7;" href="https://www.linkedin.com/in/prabhu-shankar-6a8163184/">LinkedIn Profile</a>
+		<a style="color: #0a91f8;" href="https://www.linkedin.com/in/prabhu-shankar-6a8163184/">LinkedIn Profile</a>
 		
 	</header>
 	<div class="container">
-		<div class="section onhover">
+		<div class="section onhover" >
 			<h2>Summary</h2>
-			<p>Enthusiastic &amp; Passionate in seeking a challenging position in a reputed organization where I can learn new skills, expand my knowledge, and leverage my learnings. Skilled In Java full stack, Python full stack</p>
+			<p>Enthusiastic &amp; Passionate seeking for a challenging position in a reputed organization where I can learn new skills, expand my knowledge, and leverage my learnings. Skilled In Java full stack, Python full stack</p>
 		</div>
 		<div class="section onhover">
 			<h2>Education</h2>
@@ -176,5 +269,23 @@ and software engineering as they are used extensively in building efficient algo
                 <li>Java Full Stack Certificate | Kodnest Training Centre </li>
             </ul>
         </div>
+
+        <div class="toggleme">
+          
+            <div class="toggle-switch">
+              <label class="switch-label">
+                <input type="checkbox" class="checkbox" onchange="darkmode()">
+                <span class="slider"></span>
+              </label>
+            </div>  
+        </div>
+
+		
+<script>
+  function darkmode(){
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+  }
+</script>
 </body>
 </html>
